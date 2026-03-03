@@ -13,6 +13,8 @@
     "LICENSE"
   ],
   "scripts": {
-    "test": "node --test test/*.js"
+    "test": "node --test test/*.js",
+    "build:diff-fuzz": "bash scripts/build-diff-fuzz-render.sh",
+    "diff-fuzz": "node scripts/diff-fuzz.js --cpp-bin scripts/diff-fuzz-render"
   }
 }

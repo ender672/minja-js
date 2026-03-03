@@ -46,8 +46,11 @@ npm test
 
 ## Differential fuzzing against C++ minja
 
-To compare JS output against the C++ implementation, build the C++ `diff-fuzz-render` binary from [ochafik/minja](https://github.com/ochafik/minja) and point the fuzzer at it:
+To compare JS output against the C++ implementation:
 
 ```sh
-node scripts/diff-fuzz.js --cpp-bin /path/to/diff-fuzz-render
+npm run build:diff-fuzz   # one-time: clones C++ minja + nlohmann/json, compiles harness
+npm run diff-fuzz         # runs 10k iterations comparing C++ vs JS output
 ```
+
+Requires a C++ compiler with C++17 support, `curl`, and `git`. Dependencies are cached in `.deps/`.
