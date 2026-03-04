@@ -1,6 +1,6 @@
 {
   "name": "@ender672/minja-js",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "description": "JavaScript port of the Minja Jinja2 template engine for LLM chat templates",
   "license": "MIT",
