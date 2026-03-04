@@ -1,9 +1,14 @@
 {
   "name": "@ender672/minja-js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "JavaScript port of the Minja Jinja2 template engine for LLM chat templates",
   "license": "MIT",
+  "homepage": "https://github.com/ender672/minja-js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ender672/minja-js.git"
+  },
   "exports": {
     "./minja": "./src/minja.js",
     "./chat-template": "./src/chat-template.js"

@@ -7,14 +7,14 @@
 */
 // SPDX-License-Identifier: MIT
 
-import { Parser, Context, Value, parseTemplate } from './minja.js';
+import { Parser, Context, Value } from './minja.js';
 
 export class ChatTemplate {
   constructor(source, bosToken = '', eosToken = '') {
     this._source = source;
     this._bosToken = bosToken;
     this._eosToken = eosToken;
-    this._templateRoot = parseTemplate(source, {
+    this._templateRoot = Parser.parse(source, {
       trimBlocks: true,
       lstripBlocks: true,
       keepTrailingNewline: false,
